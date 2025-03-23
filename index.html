@@ -1,204 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GameFi Token Whitepaper</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #333;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-    .container {
-      width: 80%;
-      max-width: 1000px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    h1, h2, h3 {
-      margin-top: 0;
-    }
-    .image-placeholder {
-      width: 100%;
-      height: auto;
-      margin: 20px 0;
-    }
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px 0;
-    }
-    a {
-      color: #1a73e8;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    ul, ol {
-      margin-left: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qumeow - Quantum Cat GameFi Ecosystem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* === Base Styles === */
+        :root {
+            --quantum-purple: #6c33d6;
+            --cyber-blue: #2A4ABE;
+            --neon-pink: #FF10F0;
+            --dark-bg: #0a0812;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: var(--dark-bg);
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* === Header Styles === */
+        .header {
+            background: linear-gradient(135deg, var(--quantum-purple) 0%, var(--cyber-blue) 100%);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* === Hero Section === */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('your-poster-image.jpg') center/cover;
+            margin-top: 60px;
+        }
+
+        /* === Token Info Section === */
+        .token-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* === Responsive Design === */
+        @media (max-width: 768px) {
+            .token-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>GameFi Token Whitepaper</h1>
-    <!-- Replace with your header image -->
-    <img src="header-image.jpg" alt="Header Image" class="image-placeholder" />
-  </header>
-  <div class="container">
-    <section id="introduction">
-      <h2>Introduction</h2>
-      <p>
-        Welcome to the GameFi Token Whitepaper. Our innovative project combines the excitement of gaming with the power of decentralized finance (DeFi). This document outlines the vision, technology, tokenomics, and roadmap behind our GameFi token, which is designed to revolutionize the gaming industry.
-      </p>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="qumeow-logo.png" alt="Qumeow Logo" width="120">
+            </div>
+            <div class="nav-links">
+                <a href="#game">Game</a>
+                <a href="#tokenomics">Tokenomics</a>
+                <a href="#whitepaper">Whitepaper</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Game Poster -->
+    <section class="hero" id="game">
+        <div class="hero-content">
+            <h1>Quantum Cats Revolution</h1>
+            <p>Play • Earn • Govern</p>
+            <button class="cta-button">Join Beta Test</button>
+        </div>
     </section>
 
-    <section id="vision">
-      <h2>Vision &amp; Mission</h2>
-      <p>
-        Our vision is to create a sustainable ecosystem where gamers, investors, and developers collaborate to drive the future of digital entertainment. We aim to empower our community through fair token distribution, transparent governance, and cutting-edge blockchain technology.
-      </p>
-      <!-- Replace with your vision image -->
-      <img src="vision-image.jpg" alt="Vision Image" class="image-placeholder" />
+    <!-- Token Information Section -->
+    <section class="token-section" id="tokenomics">
+        <h2>Quantum Token System</h2>
+        <div class="token-grid">
+            <!-- QUMEOW Token -->
+            <div class="token-card">
+                <img src="qumeow-token-icon.png" alt="QUMEOW" width="80">
+                <h3>$QUMEOW</h3>
+                <p class="contract-address">
+                    Contract: 0x4A12b...ME0W
+                </p>
+                <div class="token-links">
+                    <a href="[BLOCK_EXPLORER_URL]" target="_blank">View on Explorer</a>
+                    <a href="[DEX_TRADE_LINK]" target="_blank">Trade Now</a>
+                </div>
+            </div>
+
+            <!-- QUBITS Token -->
+            <div class="token-card">
+                <img src="qubits-token-icon.png" alt="QUBITS" width="80">
+                <h3>$QUBITS</h3>
+                <p class="contract-address">
+                    Contract: 0x891c3...QBTS
+                </p>
+                <div class="token-links">
+                    <a href="[BLOCK_EXPLORER_URL]" target="_blank">View on Explorer</a>
+                    <a href="[DEX_TRADE_LINK]" target="_blank">Trade Now</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="market-analysis">
-      <h2>Market Analysis</h2>
-      <p>
-        The gaming industry is witnessing exponential growth, and the integration of blockchain technology is reshaping the digital economy. GameFi marks the convergence of gaming and decentralized finance, offering real-world rewards for in-game activities. Our market analysis reveals a significant potential for user engagement, sustainable revenue generation, and global adoption.
-      </p>
+    <!-- Whitepaper Section -->
+    <section class="whitepaper-section" id="whitepaper">
+        <div class="whitepaper-container">
+            <h2>Quantum Vision Paper</h2>
+            <div class="whitepaper-download">
+                <a href="qumeow-whitepaper.pdf" download class="download-button">
+                    Download Whitepaper (v1.0)
+                </a>
+                <p>SHA-256 Checksum: e3b0c44298fc1c...af8425</p>
+            </div>
+        </div>
     </section>
 
-    <section id="technology">
-      <h2>Technology Overview</h2>
-      <p>
-        Our platform is built on a secure and scalable blockchain network, ensuring transparency and immutability for all transactions. Key technological features include:
-      </p>
-      <ul>
-        <li><strong>Smart Contracts:</strong> Automated and transparent contracts that manage all token transactions.</li>
-        <li><strong>Decentralized Governance:</strong> A community-driven model that allows token holders to participate in decision-making processes.</li>
-        <li><strong>Interoperability:</strong> Seamless integration with various gaming platforms and NFT ecosystems.</li>
-        <li><strong>Security &amp; Scalability:</strong> Advanced cryptographic techniques and consensus mechanisms to ensure network reliability and performance.</li>
-      </ul>
-      <!-- Replace with your technology image -->
-      <img src="technology-image.jpg" alt="Technology Image" class="image-placeholder" />
+    <!-- Blockchain Partners -->
+    <section class="partners-section">
+        <h3>Integrated Chains</h3>
+        <div class="chain-logos">
+            <img src="bsc-logo.png" alt="BNB Chain" width="80">
+            <img src="polygon-logo.png" alt="Polygon" width="80">
+            <img src="arbitrum-logo.png" alt="Arbitrum" width="80">
+        </div>
     </section>
 
-    <section id="tokenomics">
-      <h2>Tokenomics</h2>
-      <p>
-        The GameFi token is designed to provide utility and value throughout our ecosystem. Our fair and transparent token distribution model is built to foster growth and incentivize long-term engagement:
-      </p>
-      <ul>
-        <li><strong>Total Supply:</strong> 1,000,000,000 tokens</li>
-        <li>
-          <strong>Distribution:</strong>
-          <ul>
-            <li>Community &amp; Ecosystem: 50%</li>
-            <li>Team &amp; Advisors: 20%</li>
-            <li>Partnerships &amp; Development: 15%</li>
-            <li>Reserve &amp; Future Incentives: 15%</li>
-          </ul>
-        </li>
-        <li><strong>Utility:</strong> Tokens are used for staking, governance, in-game purchases, and reward mechanisms.</li>
-        <li><strong>Incentives:</strong> Attractive staking and yield farming rewards encourage long-term holding and active participation.</li>
-      </ul>
-      <!-- Replace with your tokenomics image -->
-      <img src="tokenomics-image.jpg" alt="Tokenomics Image" class="image-placeholder" />
-    </section>
-
-    <section id="roadmap">
-      <h2>Roadmap</h2>
-      <p>
-        Our project roadmap outlines our phased approach to development and growth:
-      </p>
-      <ol>
-        <li>
-          <strong>Phase 1: Concept &amp; Development</strong>
-          <ul>
-            <li>Market research and concept validation</li>
-            <li>Team formation and initial fundraising</li>
-            <li>Prototype development</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Phase 2: Launch &amp; Community Building</strong>
-          <ul>
-            <li>Token launch and initial exchange listings</li>
-            <li>Community engagement and marketing campaigns</li>
-            <li>Strategic partnerships with gaming platforms</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Phase 3: Platform Expansion</strong>
-          <ul>
-            <li>Full launch of the GameFi ecosystem</li>
-            <li>Integration of NFTs and in-game asset functionalities</li>
-            <li>Implementation of decentralized governance mechanisms</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Phase 4: Global Adoption</strong>
-          <ul>
-            <li>Expansion into international markets</li>
-            <li>Ongoing platform upgrades and feature releases</li>
-            <li>Strengthening community and forging new strategic partnerships</li>
-          </ul>
-        </li>
-      </ol>
-    </section>
-
-    <section id="team">
-      <h2>Team</h2>
-      <p>
-        Our team comprises experienced professionals in blockchain technology, gaming, finance, and marketing. We are dedicated to transparency, innovation, and community engagement.
-      </p>
-      <!-- Replace with your team image -->
-      <img src="team-image.jpg" alt="Team Image" class="image-placeholder" />
-    </section>
-
-    <section id="conclusion">
-      <h2>Conclusion</h2>
-      <p>
-        The GameFi token is set to drive innovation at the intersection of gaming and decentralized finance. With a robust technological foundation, fair tokenomics, and a clear roadmap, we invite you to join us as we redefine the future of gaming.
-      </p>
-    </section>
-
-    <section id="disclaimer">
-      <h2>Disclaimer</h2>
-      <p>
-        This whitepaper is for informational purposes only and does not constitute financial, legal, or investment advice. Readers are encouraged to conduct their own research and consult professional advisors before making any decisions.
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>
-        For further information, please reach out to us at
-        <a href="mailto:info@gamefi-token.com">info@gamefi-token.com</a> or follow us on our social media channels.
-      </p>
-    </section>
-  </div>
-  <footer>
-    <p>&copy; 2025 GameFi Token. All rights reserved.</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>© 2023 Qumeow.lol - All rights reserved</p>
+        <div class="social-links">
+            <a href="[TWITTER_URL]">Twitter</a>
+            <a href="[TELEGRAM_URL]">Telegram</a>
+            <a href="[DISCORD_URL]">Discord</a>
+        </div>
+    </footer>
 </body>
 </html>
-
